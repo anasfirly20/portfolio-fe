@@ -4,6 +4,7 @@ import HeroSection from "./contents/HeroSection";
 import AboutSection from "./contents/AboutSection";
 import ProjectSection from "./contents/ProjectSection";
 import ContactSection from "./contents/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutSection />
       <ProjectSection />
       <ContactSection />
+      <ScrollToTop />
     </>
   );
 }
