@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import HeroSection from "./contents/HeroSection";
 import AboutSection from "./contents/AboutSection";
 import ProjectSection from "./contents/ProjectSection";
+import ContactSection from "./contents/Contact";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <ProjectSection />
+      <ContactSection />
     </>
   );
 }

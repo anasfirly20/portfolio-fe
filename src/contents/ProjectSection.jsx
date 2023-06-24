@@ -10,14 +10,17 @@ import { icons, images, list } from "../components/constants";
 const ProjectSection = () => {
   return (
     <section className="px-longer2 py-normal">
-      <h1 className="text-center text-4xl font-medium">Featured Projects</h1>
+      <h1 className="text-center">Featured Projects</h1>
       <div className="flex justify-center gap-10 mt-8">
         {icons.map((e, i) => (
           <Icon key={i} icon={e.icon} color="#525252" className="text-4xl" />
         ))}
       </div>
       {images.map((e, i) => (
-        <section className={`mt-20 flex ${i % 2 === 1 && "justify-end"}`}>
+        <section
+          key={i}
+          className={`mt-20 flex ${i % 2 === 1 && "justify-end"}`}
+        >
           <div
             className={`w-[430px] h-[580px] relative group flex ${
               i % 2 === 1 ? "" : "flex-row-reverse"
@@ -57,8 +60,10 @@ const ProjectSection = () => {
                   </a>
                 </div>
                 <ul className="space-y-2">
-                  {list.map((e) => (
-                    <li className="pSmaller2">• {e}</li>
+                  {list.map((e, i) => (
+                    <li key={i} className="pSmaller2">
+                      • {e}
+                    </li>
                   ))}
                 </ul>
               </div>
