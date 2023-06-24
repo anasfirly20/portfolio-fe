@@ -26,7 +26,11 @@ const ProjectSection = () => {
               i % 2 === 1 ? "" : "flex-row-reverse"
             }`}
           >
-            <img src={e.img} alt="" className="object-cover w-full h-full" />
+            <img
+              src={e.img}
+              alt=""
+              className="object-cover w-full h-full z-10"
+            />
             <div className="bg-layer absolute inset-0 group-hover:opacity-0 animate500 flex justify-center items-center"></div>
             <h3
               className={`animate500 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] py-2 px-7 animate border-4 border-project group-hover:border-none group-hover:opacity-0 ${
@@ -38,10 +42,10 @@ const ProjectSection = () => {
               {e.name}
             </h3>
             <div
-              className={`-z-10 opacity-0 group-hover:opacity-100 self-end absolute h-fit w-[85%] -bottom-5 border-4 border-project animate500 ${
+              className={`opacity-0 group-hover:opacity-100 self-end absolute h-fit w-[95%] -bottom-5 border-4 border-project animate500 ${
                 i % 2 === 1
-                  ? "border-r-0 group-hover:translate-x-[-22rem]"
-                  : "border-l-0 group-hover:translate-x-[22rem]"
+                  ? "group-hover:translate-x-[-24rem]"
+                  : "group-hover:translate-x-[24rem]"
               }`}
             >
               <div className={`flex flex-col py-6 px-12 gap-5`}>
