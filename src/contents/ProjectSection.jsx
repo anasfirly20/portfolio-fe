@@ -31,9 +31,9 @@ const ProjectSection = () => {
               alt=""
               className="object-cover w-full h-full z-10"
             />
-            <div className="bg-layer absolute inset-0 group-hover:opacity-0 animate500 flex justify-center items-center"></div>
+            <div className="bg-layer absolute inset-0 group-hover:opacity-0 animate500 flex justify-center items-center z-10" />
             <h3
-              className={`animate500 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] py-2 px-7 animate border-4 border-project group-hover:border-none group-hover:opacity-0 ${
+              className={`z-10 animate500 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] py-2 px-7 animate border-4 border-project group-hover:border-none group-hover:opacity-0 ${
                 i % 2 === 1
                   ? "group-hover:translate-x-[-27rem]"
                   : "group-hover:translate-x-[15rem]"
