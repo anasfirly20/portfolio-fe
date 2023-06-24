@@ -50,14 +50,17 @@ const ProjectSection = () => {
     {
       name: "Belinsky Studio",
       img: belinsky,
+      link: "https://belinskyproduction.com/",
     },
     {
       name: "TurunTangan",
       img: turta,
+      link: "https://turuntangan.id/",
     },
     {
       name: "KIMA",
       img: kima,
+      link: "https://kima.kpfu.ru/",
     },
   ];
 
@@ -98,7 +101,7 @@ const ProjectSection = () => {
             <div
               className={`opacity-0 group-hover:opacity-100 self-end absolute h-[60%] w-[85%] -bottom-5 border-4 border-project animate500 ${
                 i % 2 === 1
-                  ? "border-r-0 group-hover:translate-x-[-20rem]"
+                  ? "border-r-0 group-hover:translate-x-[-22rem]"
                   : "border-l-0 group-hover:translate-x-[22rem]"
               }`}
             >
@@ -107,13 +110,23 @@ const ProjectSection = () => {
                   i % 2 === 1 ? "px-6" : "px-12"
                 }`}
               >
-                <div className="flex justify-between">
-                  <h3>{e.name}</h3>
-                  <ArrowSvg className="w-8 h-8" />
+                <div
+                  className={`flex justify-between ${
+                    i % 2 === 1 && "flex-row-reverse"
+                  } `}
+                >
+                  <h3 className="pBigger">{e.name}</h3>
+                  <a target="_blank" rel="noopener noreferrer" href={e.link}>
+                    <ArrowSvg
+                      className={`w-8 h-8 hover:opacity-60 animate ${
+                        i % 2 === 1 && "rotate-180"
+                      }`}
+                    />
+                  </a>
                 </div>
                 <ul className="space-y-2">
                   {list.map((e) => (
-                    <li className="pSmaller3">• {e}</li>
+                    <li className="pSmaller2">• {e}</li>
                   ))}
                 </ul>
               </div>
