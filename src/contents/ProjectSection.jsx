@@ -35,17 +35,13 @@ const ProjectSection = () => {
               {e.name}
             </h3>
             <div
-              className={`opacity-0 group-hover:opacity-100 self-end absolute h-[60%] w-[85%] -bottom-5 border-4 border-project animate500 ${
+              className={`opacity-0 group-hover:opacity-100 self-end absolute h-fit w-[85%] -bottom-5 border-4 border-project animate500 ${
                 i % 2 === 1
                   ? "border-r-0 group-hover:translate-x-[-22rem]"
                   : "border-l-0 group-hover:translate-x-[22rem]"
               }`}
             >
-              <div
-                className={`flex flex-col py-3 gap-3 ${
-                  i % 2 === 1 ? "px-6" : "px-12"
-                }`}
-              >
+              <div className={`flex flex-col py-6 px-12 gap-3`}>
                 <div
                   className={`flex justify-between ${
                     i % 2 === 1 && "flex-row-reverse"
