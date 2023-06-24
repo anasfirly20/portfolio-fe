@@ -4,74 +4,10 @@ import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
 // Miscellaneous
 import { Icon } from "@iconify/react";
 
-// Assets
-import belinsky from "../assets/Belinsky.webp";
-import turta from "../assets/Turta.webp";
-import kima from "../assets/Kima.webp";
+// Constants
+import { icons, images, list } from "../components/constants";
 
 const ProjectSection = () => {
-  const icons = [
-    {
-      icon: "simple-icons:javascript",
-    },
-    {
-      icon: "simple-icons:typescript",
-    },
-    {
-      icon: "simple-icons:react",
-    },
-    {
-      icon: "simple-icons:redux",
-    },
-    {
-      icon: "simple-icons:tailwindcss",
-    },
-    {
-      icon: "simple-icons:antdesign",
-    },
-    {
-      icon: "simple-icons:mui",
-    },
-    {
-      icon: "tabler:brand-framer-motion",
-    },
-    {
-      icon: "simple-icons:git",
-    },
-    {
-      icon: "simple-icons:axios",
-    },
-    {
-      icon: "simple-icons:vite",
-    },
-  ];
-
-  const images = [
-    {
-      name: "Belinsky Studio",
-      img: belinsky,
-      link: "https://belinskyproduction.com/",
-    },
-    {
-      name: "TurunTangan",
-      img: turta,
-      link: "https://turuntangan.id/",
-    },
-    {
-      name: "KIMA",
-      img: kima,
-      link: "https://kima.kpfu.ru/",
-    },
-  ];
-
-  const list = [
-    "Developed a fully fullstack responsive web app using React",
-    "Optimized key content pages for SEO objectives",
-    "Utilized Axios library to perform HTTP requests and consume RESTful APIs",
-    "Integrated Tailwind CSS for responsive component-based styling",
-    "Leveraged Redux Toolkit to implement a global state management solution",
-  ];
-
   return (
     <section className="px-longer2 py-normal">
       <h1 className="text-center text-4xl font-medium">Featured Projects</h1>
