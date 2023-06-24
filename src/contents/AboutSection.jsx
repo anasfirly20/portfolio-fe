@@ -8,7 +8,10 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="px-longer2 py-normal flex flex-col items-end gap-3 justify-end">
+    <section
+      className="px-longer2 py-normal flex flex-col items-end gap-3 justify-end"
+      id="about"
+    >
       <div className="border-2 w-[65%] p-8 border-gradient-about">
         <p className="whitespace-pre-line">
           As a new web developer with a strong foundation in HTML, CSS, and

@@ -9,7 +9,7 @@ import { icons, images, list } from "../components/constants";
 
 const ProjectSection = () => {
   return (
-    <section className="px-longer2 py-normal">
+    <section className="px-longer2 py-normal" id="project">
       <h1 className="text-center">Featured Projects</h1>
       <div className="flex justify-center gap-10 mt-8">
         {icons.map((e, i) => (
