@@ -70,11 +70,18 @@ const ProjectSection = () => {
       </div>
       {images.map((e, i) => (
         <section className={`mt-20 flex ${i % 2 === 1 && "justify-end"}`}>
-          <div className="w-[430px] h-[580px] relative">
+          <div className="w-[430px] h-[580px] relative group">
             <img src={e.img} alt="" className="object-cover w-full h-full" />
-            <div className="bg-layer absolute inset-0 hover:opacity-0 animate500 flex justify-center items-center">
-              <h3 className="py-3 px-12 border-4 border-project">{e.name}</h3>
-            </div>
+            <div className="bg-layer absolute inset-0 group-hover:opacity-0 animate500 flex justify-center items-center"></div>
+            <h3
+              className={`absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] py-2 px-7 border-4 border-project animate group-hover:border-hidden ${
+                i % 2 === 1
+                  ? "group-hover:translate-x-[-27rem]"
+                  : "group-hover:translate-x-[15rem]"
+              }`}
+            >
+              {e.name}
+            </h3>
           </div>
         </section>
       ))}
