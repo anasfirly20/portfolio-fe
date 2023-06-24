@@ -31,9 +31,10 @@ const Contact = () => {
       <h1 className="">Contact Me</h1>
       <p>
         I am actively seeking new opportunities at the moment and would be open
-        to hearing about any potential <br /> opportunities that may be
-        available. Please feel free to reach out to me if you have any leads or
-        if you would <br /> like to discuss potential collaborations.
+        to hearing about any potential <br className="max-lg:hidden" />{" "}
+        opportunities that may be available. Please feel free to reach out to me
+        if you have any leads or if you would <br className="max-lg:hidden" />{" "}
+        like to discuss potential collaborations.
       </p>
       <div className="flex justify-center items-center gap-3">
         {icons.map((e, i) => (
