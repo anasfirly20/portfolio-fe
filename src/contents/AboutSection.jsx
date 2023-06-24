@@ -12,7 +12,7 @@ const AboutSection = () => {
       className="px-longer2 py-normal flex flex-col items-end gap-3 justify-end"
       id="about"
     >
-      <div className="border-2 w-[65%] p-8 border-gradient-about">
+      <div className="border-2 w-full p-4 lg:w-[65%] lg:p-8 border-gradient-about">
         <p className="whitespace-pre-line">
           As a web developer with a strong foundation in HTML, CSS, and
           JavaScript, and proficiency in React and Tailwind CSS. I am dedicated
