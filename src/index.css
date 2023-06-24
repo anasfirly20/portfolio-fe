@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #202020;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.border-gradient-about {
+  border-image: linear-gradient(
+      to right,
+      #bfbfbf,
+      #3c3c3c,
+      #302e2e,
+      #2b2a2a,
+      #4f4f4f
+    )
+    1;
+}
+
+.border-gradient-navbar {
+  border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      #b7b7b7,
+      #343434,
+      rgba(191, 191, 191, 0.45),
+      rgba(191, 191, 191, 0)
+    )
+    1;
+}
+
+@layer components {
+  .animate {
+    @apply transition-all duration-300;
+  }
+}
