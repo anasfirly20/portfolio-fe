@@ -14,7 +14,7 @@ const AboutSection = () => {
     >
       <div className="border-2 w-[65%] p-8 border-gradient-about">
         <p className="whitespace-pre-line">
-          As a new web developer with a strong foundation in HTML, CSS, and
+          As a web developer with a strong foundation in HTML, CSS, and
           JavaScript, and proficiency in React and Tailwind CSS. I am dedicated
           to delivering high-quality work and continuously learning and growing
           in my skills. I am confident in my ability to adapt to new
