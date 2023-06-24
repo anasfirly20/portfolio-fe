@@ -25,7 +25,7 @@ const icons = [
 const Contact = () => {
   return (
     <section
-      className="px-longer2 py-normal text-center space-y-10"
+      className="px-longer2 py-normal text-center space-y-5 lg:space-y-10"
       id="contact"
     >
       <h1 className="">Contact Me</h1>
