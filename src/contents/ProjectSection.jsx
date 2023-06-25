@@ -19,7 +19,7 @@ const ProjectSection = () => {
       {images.map((e, i) => (
         <section
           key={i}
-          className={`lg:px-longer5 max-lg:mt-5 mt-20 flex max-lg:justify-center ${
+          className={`lg:px-shorter max-lg:mt-5 mt-20 flex max-lg:justify-center ${
             i % 2 === 1 && "justify-end"
           }`}
         >

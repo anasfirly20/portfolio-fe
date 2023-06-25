@@ -26,7 +26,7 @@ const ScrollToTop = () => {
     <div
       className={
         visible
-          ? "flex justify-center items-center fixed bottom-0 right-3 lg:right-5 mb-2 z-10 transition-all transform scale-120 btn btn-ghost hover:bg-transparent"
+          ? "flex justify-center items-center fixed bottom-0 right-[0.3rem] lg:right-5 mb-2 z-10 transition-all transform scale-120 btn btn-ghost hover:bg-transparent"
           : "hidden"
       }
     >
