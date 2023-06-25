@@ -1,5 +1,5 @@
 // Assets
-import logo from "../assets/anas-logo.png";
+import logo from "../assets/anas-logo.webp";
 
 // Misellaneous
 import Lottie from "lottie-react";

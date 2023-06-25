@@ -20,7 +20,7 @@ const LazyImageComponent = ({ src, className, classNameDiv, hash, alt }) => {
         style={{ display: imageLoaded ? "none" : "inline" }}
         className={`relative animate-pulse ${classNameDiv}`}
       >
-        <div className="absolute inset-0 bg-layer z-10" />
+        {/* <div className="absolute inset-0 bg-layer z-10" /> */}
         <Blurhash
           hash={hash}
           width="100%"
