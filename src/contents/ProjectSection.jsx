@@ -7,6 +7,9 @@ import { Icon } from "@iconify/react";
 // Constants
 import { icons, images, list } from "../components/constants";
 
+// Components
+import LazyImageComponent from "../components/LazyImageComponent";
+
 const ProjectSection = () => {
   return (
     <section className="px-longer2 py-normal" id="project">
@@ -28,9 +31,10 @@ const ProjectSection = () => {
               i % 2 === 1 ? "" : "flex-row-reverse"
             } `}
           >
-            <img
+            <LazyImageComponent
               src={e.img}
-              alt=""
+              hash={e.hash}
+              classNameDiv="object-cover w-[430px] h-[580px] z-20"
               className="object-cover w-full h-full z-10"
             />
             <div className="max-lg:hidden bg-layer absolute inset-0 group-hover:opacity-0 animate500 flex justify-center items-center z-10" />

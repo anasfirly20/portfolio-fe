@@ -45,18 +45,21 @@ export const images = [
     img: belinsky,
     link: "https://belinskyproduction.com/",
     desc: "Belinsky is a production house and creative studio that specializes in both professional photography and filmmaking.",
+    hash: "LZLEKUWC~p%MxDofR-of_2Rjozt7",
   },
   {
     name: "TurunTangan",
     img: turta,
     link: "https://turuntangan.id/",
     desc: "TurunTangan is a non-profit youth volunteer movement with more than 70 chapters across Indonesia.",
+    hash: "LONIKvRPD4xu-pVrR*Mx.mMyRPoz",
   },
   {
     name: "KIMA",
     img: kima,
     link: "https://kima.kpfu.ru/",
     desc: "KIMA is a digital platform that helps universities assess the relevance of their programs in specific fields and their alignment with the competency requirements of the job market.",
+    hash: "LHO|kbNh~URP-h?vs*IU^$Sj01s;",
   },
 ];
 

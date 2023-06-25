@@ -19,7 +19,7 @@ const navItems = [
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed w-full bg-[#202020] z-20 max-lg:hidden">
+      <nav className="fixed w-full bg-[#202020] z-30 max-lg:hidden">
         <div className="flex justify-between px-longer2 py-shorter4 border-b-2 border-gradient-navbar">
           <div
             className="flex gap-1 drop-shadow-[3px_3px_4px_white] hover:cursor-pointer"
