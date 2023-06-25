@@ -69,10 +69,10 @@ const ProjectSection = () => {
             </div>
             {/* MOBILE VERSION END */}
             <div
-              className={`max-lg:hidden opacity-0 group-hover:opacity-100 self-end absolute h-fit w-[95%] -bottom-5 border-4 border-project animate500 ${
+              className={`max-lg:hidden opacity-0 group-hover:opacity-100 self-end absolute h-fit w-[95%] -bottom-5 border-4 animate500 ${
                 i % 2 === 1
-                  ? "group-hover:translate-x-[-24rem]"
-                  : "group-hover:translate-x-[24rem]"
+                  ? "group-hover:translate-x-[-24rem] border-project-trans-left"
+                  : "group-hover:translate-x-[24rem] border-project-trans-right"
               }`}
             >
               <div className={`flex flex-col py-6 px-12 gap-5`}>

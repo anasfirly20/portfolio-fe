@@ -88,6 +88,16 @@
 }
 
 .border-project {
-  /* box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25); */
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-image: linear-gradient(to right, #797979, #ffffff) 1;
+}
+
+.border-project-trans-right {
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-image: linear-gradient(to right, #202020, #ffffff, #ffffff) 1;
+}
+
+.border-project-trans-left {
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-image: linear-gradient(to left, #202020, #ffffff, #ffffff) 1;
 }
