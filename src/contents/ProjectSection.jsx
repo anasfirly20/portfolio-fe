@@ -11,7 +11,7 @@ const ProjectSection = () => {
   return (
     <section className="px-longer2 py-normal" id="project">
       <h1 className="text-center">Featured Projects</h1>
-      <div className="flex justify-center gap-10 mt-4 lg:mt-8">
+      <div className="flex justify-center gap-10 mt-4 lg:mt-8 max-sm:hidden">
         {icons.map((e, i) => (
           <Icon key={i} icon={e.icon} color="#525252" className="text-4xl" />
         ))}
@@ -19,7 +19,7 @@ const ProjectSection = () => {
       {images.map((e, i) => (
         <section
           key={i}
-          className={`max-lg:mt-5 mt-20 flex max-lg:justify-center ${
+          className={`lg:px-longer5 max-lg:mt-5 mt-20 flex max-lg:justify-center ${
             i % 2 === 1 && "justify-end"
           }`}
         >
