@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
-const ScrollToTop = () => {
+const ScrollToTop: React.FC = () => {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
+  const toggleVisible = (): void => {
+    const scrolled : number = document.documentElement.scrollTop;
     if (scrolled > 300) {
       setVisible(true);
     } else if (scrolled <= 300) {
@@ -13,14 +13,19 @@ const ScrollToTop = () => {
     }
   };
 
-  const scrollToTop = () => {
+  const scrollToTop = (): void => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
 
-  window.addEventListener("scroll", toggleVisible);
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+    return () => {
+    window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
 
   return (
     <div

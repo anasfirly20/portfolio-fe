@@ -3,7 +3,15 @@ import React, { useState, useEffect } from "react";
 // Miscellaneous
 import { Blurhash } from "react-blurhash";
 
-const LazyImageComponent = ({ src, className, classNameDiv, hash, alt }) => {
+interface IProps {
+  src: string,
+  className?: string,
+  classNameDiv?: string,
+  hash: string,
+  alt?: string
+}
+
+const LazyImageComponent = ({ src, className, classNameDiv, hash, alt } : IProps) => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {

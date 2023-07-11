@@ -10,16 +10,16 @@ import { icons, images, list } from "../components/constants";
 // Components
 import LazyImageComponent from "../components/LazyImageComponent";
 
-const ProjectSection = () => {
+const ProjectSection = () : React.JSX.Element => {
   return (
     <section className="px-longer2 py-normal" id="project">
       <h1 className="text-center">Featured Projects</h1>
       <div className="flex justify-center gap-10 mt-4 lg:mt-8 max-sm:hidden">
-        {icons.map((e, i) => (
+        {icons.map((e, i: number) => (
           <Icon key={i} icon={e.icon} color="#525252" className="text-4xl" />
         ))}
       </div>
-      {images.map((e, i) => (
+      {images.map((e, i : number) => (
         <section
           key={i}
           className={`lg:px-shorter max-lg:mt-5 mt-20 flex max-lg:justify-center ${
@@ -52,7 +52,7 @@ const ProjectSection = () => {
               <h2 className="text-center animate500">{e.name}</h2>
               <p className="text-center">{e.desc}</p>
               <ul className="space-y-2">
-                {list.map((e, i) => (
+                {list.map((e, i: number) => (
                   <li key={i} className="pSmaller2">
                     • {e}
                   </li>
@@ -91,7 +91,7 @@ const ProjectSection = () => {
                   </a>
                 </div>
                 <ul className="space-y-2">
-                  {list.map((e, i) => (
+                  {list.map((e, i: number) => (
                     <li key={i} className="pSmaller2">
                       • {e}
                     </li>
