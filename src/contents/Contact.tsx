@@ -3,7 +3,12 @@ import React from "react";
 // Miscellaneous
 import { Icon } from "@iconify/react";
 
-const icons = [
+interface IIcons {
+  icon: string,
+  link: string
+}
+
+const icons: IIcons[] = [
   {
     icon: "mdi:email",
     link: "mailto:anasfirly20@gmail.com",
@@ -22,7 +27,7 @@ const icons = [
   },
 ];
 
-const Contact = () => {
+const Contact = (): React.JSX.Element => {
   return (
     <section
       className="px-longer2 py-normal text-center space-y-5 lg:space-y-10"
@@ -37,7 +42,7 @@ const Contact = () => {
         like to discuss potential collaborations.
       </p>
       <div className="flex justify-center items-center gap-3">
-        {icons.map((e, i) => (
+        {icons.map((e, i: number) => (
           <a key={i} target="_blank" rel="noopener noreferrer" href={e.link}>
             <Icon
               icon={e.icon}

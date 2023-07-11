@@ -1,3 +1,5 @@
+import React from "react";
+
 // Contents
 import Navbar from "./components/navbar/Navbar";
 import HeroSection from "./contents/HeroSection";
@@ -6,7 +8,7 @@ import ProjectSection from "./contents/ProjectSection";
 import ContactSection from "./contents/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 
-function App() {
+const App = (): React.JSX.Element => {
   return (
     <>
       <Navbar />

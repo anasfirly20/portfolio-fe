@@ -11,7 +11,7 @@ interface IProps {
   alt?: string
 }
 
-const LazyImageComponent = ({ src, className, classNameDiv, hash, alt } : IProps) => {
+const LazyImageComponent = ({ src, className, classNameDiv, hash, alt } : IProps): React.JSX.Element => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {

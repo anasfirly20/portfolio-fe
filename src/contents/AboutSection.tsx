@@ -2,8 +2,9 @@ import React from "react";
 import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
 import pdf from "../documents/resume.pdf";
 
-const AboutSection = () => {
-  const openPdf = () => {
+const AboutSection = () : React.JSX.Element => {
+  
+  const openPdf = (): void => {
     window.open(pdf);
   };
 

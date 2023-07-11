@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
-const ScrollToTop: React.FC = () => {
+const ScrollToTop = (): React.JSX.Element => {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = (): void => {

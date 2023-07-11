@@ -1,3 +1,5 @@
+import React from "react";
+
 // Assets
 import logo from "../assets/anas-logo.webp";
 
@@ -6,8 +8,8 @@ import Lottie from "lottie-react";
 import scrollLottie from "../assets/scroll-lottie.json";
 import { useRef } from "react";
 
-const HeroSection = () => {
-  const scrollRef = useRef();
+const HeroSection = (): React.JSX.Element => {
+  const scrollRef: React.MutableRefObject<any> = useRef();
 
   return (
     <section className="min-h-screen w-full flex flex-col justify-center items-center relative px-longer2">
