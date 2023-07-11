@@ -1,9 +1,21 @@
 // Assets
-import belinsky from "../assets/Belinsky.webp";
+import belinsky from '../assets/Belinsky.webp'
 import turta from "../assets/Turta.webp";
 import kima from "../assets/Kima.webp";
 
-export const icons = [
+interface IIcons {
+  icon: string
+}
+
+interface IImages {
+  name: string,
+  img: string,
+  link: string,
+  desc: string,
+  hash: string
+}
+
+export const icons : IIcons[] = [
   {
     icon: "simple-icons:javascript",
   },
@@ -39,7 +51,7 @@ export const icons = [
   },
 ];
 
-export const images = [
+export const images : IImages[] = [
   {
     name: "Belinsky Studio",
     img: belinsky,
@@ -63,7 +75,7 @@ export const images = [
   },
 ];
 
-export const list = [
+export const list : string[] = [
   "Developed a fully fullstack responsive web app using React",
   "Optimized key content pages for SEO objectives",
   "Utilized Axios library to perform HTTP requests and consume RESTful APIs",
