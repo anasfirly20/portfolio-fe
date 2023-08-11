@@ -1,11 +1,10 @@
 import React from "react";
 import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
-import pdf from "../documents/resume.pdf";
+import resumePdf from "../documents/Anasfirly_Resume_EN.pdf";
 
-const AboutSection = () : React.JSX.Element => {
-  
+const AboutSection = (): React.JSX.Element => {
   const openPdf = (): void => {
-    window.open(pdf);
+    window.open(resumePdf);
   };
 
   return (
@@ -15,12 +14,13 @@ const AboutSection = () : React.JSX.Element => {
     >
       <div className="border-2 w-full p-4 lg:w-[65%] lg:p-8 border-gradient-about">
         <p className="whitespace-pre-line">
-          As a web developer with a strong foundation in HTML, CSS, and
-          JavaScript, and proficiency in React and Tailwind CSS. I am dedicated
-          to delivering high-quality work and continuously learning and growing
-          in my skills. I am confident in my ability to adapt to new
-          technologies and excited to bring my passion for technology and
-          problem-solving to every project.
+          I am a frontend developer using TypeScript, React JS, and React
+          Native. I am experienced in implementing web design based on figma
+          designs to integrating APIs using tools like Axios. In addition, I
+          have used Redux to manage complex application states. With my
+          expertise in writing type-safe code and my proficiency in these
+          technologies, I can help build robust and scalable front-end solutions
+          for any project.
         </p>
       </div>
       <div
