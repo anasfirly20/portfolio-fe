@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 
 // Assets
 import logo from "../assets/anas-logo.webp";
 
-// Misellaneous
+// Miscellaneous
 import Lottie from "lottie-react";
 import scrollLottie from "../assets/scroll-lottie.json";
-import { useRef } from "react";
 
 const HeroSection = (): React.JSX.Element => {
   const scrollRef: React.MutableRefObject<any> = useRef();

@@ -17,6 +17,6 @@ const App = (): React.JSX.Element => {
       <ScrollToTop />
     </>
   );
-}
+};
 
 export default App;

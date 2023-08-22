@@ -10,7 +10,7 @@ import { icons, images, list } from "../components/constants";
 // Components
 import LazyImageComponent from "../components/LazyImageComponent";
 
-const ProjectSection = () : React.JSX.Element => {
+const ProjectSection = (): React.JSX.Element => {
   return (
     <section className="px-longer2 py-normal" id="project">
       <h1 className="text-center">Featured Projects</h1>
@@ -19,7 +19,7 @@ const ProjectSection = () : React.JSX.Element => {
           <Icon key={i} icon={e.icon} color="#525252" className="text-4xl" />
         ))}
       </div>
-      {images.map((e, i : number) => (
+      {images.map((e, i: number) => (
         <section
           key={i}
           className={`lg:px-shorter max-lg:mt-5 mt-20 flex max-lg:justify-center ${

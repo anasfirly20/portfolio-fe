@@ -2,11 +2,11 @@ import React from "react";
 import { Link, animateScroll } from "react-scroll";
 
 interface INavItems {
-  item: string,
-  to: string,
+  item: string;
+  to: string;
 }
 
-const navItems : INavItems[] = [
+const navItems: INavItems[] = [
   {
     item: "About",
     to: "about",
@@ -21,7 +21,7 @@ const navItems : INavItems[] = [
   },
 ];
 
-const Navbar = () : React.JSX.Element => {
+const Navbar = (): React.JSX.Element => {
   return (
     <>
       <nav className="fixed w-full bg-[#202020] z-30 max-lg:hidden">

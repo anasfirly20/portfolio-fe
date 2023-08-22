@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as ArrowSvg } from "../assets/arrow.svg";
-import resumePdf from "../documents/Anasfirly_Resume_EN.pdf";
+import resumePdf from "../documents/Anasfirly_Resume.pdf";
 
 const AboutSection = (): React.JSX.Element => {
   const openPdf = (): void => {
